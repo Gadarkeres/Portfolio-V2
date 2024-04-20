@@ -1,8 +1,10 @@
+'use client'
+import Header from "@/components/header/header";
 
 export default function Home() {
   return (
     <main>
-      <h1>hello word</h1>
+      <Header/>
     </main>
   )
 }

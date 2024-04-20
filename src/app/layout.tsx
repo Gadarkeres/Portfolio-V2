@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+export const roboto = Roboto({ weight:'400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Portfolio - Matheus',
@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={`${roboto.className} dark`}>
+        {children}
+        </body>
     </html>
   )
 }

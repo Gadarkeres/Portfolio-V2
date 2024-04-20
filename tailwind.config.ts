@@ -6,15 +6,16 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: "selector",
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
-  plugins: [],
 }
+// pallete colors
+// primary Navbar : gray 200 dark mode : gray 950 // secundary : sky 400 dark mode : sky 600
+// primary content : gray 50 dark mode : gray 900 // secundary : sky 400 dark mode : sky 600
 export default config
