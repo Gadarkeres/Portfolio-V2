@@ -3,7 +3,7 @@ import { Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header/header';
 
-export const roboto = Roboto({ weight:'400'});
+const roboto = Roboto({ weight:'400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Portfolio - Matheus',
