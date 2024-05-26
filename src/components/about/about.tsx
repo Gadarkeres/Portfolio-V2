@@ -1,11 +1,13 @@
+'use client'
 import Image from 'next/image';
 import Me from '../../assets/me/me.png';
+import './about.css'; 
 
 function About() {
     return (
-        <section className="flex justify-center items-center w-100 min-h-screen bg-gray-200 dark:bg-black">
+        <section className="flex justify-center items-center w-full min-h-screen bg-gray-200 dark:bg-black">
             <div className="w-full h-3/4 bg-slate-200 dark:bg-black flex flex-col md:flex-row md:justify-around md:items-center gap-20">
-                <div>
+                <div className="image-container relative inline-block">
                     <Image
                         src={Me}
                         alt="Matheus Rafael"

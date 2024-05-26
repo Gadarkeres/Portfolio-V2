@@ -27,7 +27,7 @@ const Header = () => {
         </div>
         <ul className="hidden md:flex gap-8 flex-row text-center">
           {navbarItems.map((item, index) => (
-            <NavbarItem key={index} title={item.title} path={item.path} />
+            <NavbarItem key={index} title={item.title} path={item.path} toggleMenu={toggleMenu} />
           ))}
           <li>
             <Switch 
@@ -44,7 +44,7 @@ const Header = () => {
        <ul className={clsx(isMenuOpen ?"flex flex-col text-center mt-5 md:hidden" : "hidden", "text-center"
        )}>
           {navbarItems.map((item, index) => (
-            <NavbarItem key={index} title={item.title} path={item.path} />
+            <NavbarItem key={index} title={item.title} path={item.path} toggleMenu={toggleMenu} />
           ))}
            <li className="p-5">
             <Switch 

@@ -2,6 +2,7 @@ export interface NavbarItems {
     title: string;
     path: string;
     index?: number;
+    toggleMenu?: () => void;
 }
 
 export const navbarItems: NavbarItems[] = [

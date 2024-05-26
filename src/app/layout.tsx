@@ -4,7 +4,7 @@ import './globals.css'
 import Header from '@/components/header/header';
 
 const roboto = Roboto({ weight:'500', subsets: ['latin'] });
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
 export const metadata: Metadata = {
   title: 'Portfolio - Matheus',

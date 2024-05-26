@@ -1,0 +1,13 @@
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.image-container {
+    animation: bounce 3.5s infinite;
+}
+
