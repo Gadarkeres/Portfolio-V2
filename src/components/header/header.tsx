@@ -16,7 +16,7 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const handleTheme = useTheme();
   return (
-    <header className="w-screen bg-white overflow-hidden  dark:bg-primaryBlack fixed md:max-h-auto">
+    <header className="w-screen h-15 bg-white overflow-hidden  dark:bg-primaryBlack  md:max-h-auto">
       <nav className="container mx-auto flex justify-around items-center py-4 md: ">
         <div className="text-2xl font-bold text-gray-900 dark:text-gray-50">
           <Link href="/">M</Link>

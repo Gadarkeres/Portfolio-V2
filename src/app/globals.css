@@ -15,7 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+body{
+  overflow-x: hidden;
+}
 
 .ant-switch-checked{
   background-color: #333!important;
