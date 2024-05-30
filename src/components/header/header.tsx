@@ -32,7 +32,6 @@ const Header = () => {
           <li>
             <Switch 
              onClick={handleTheme}
-             defaultChecked
              checkedChildren={<MoonFilled className="text-gray-50 text-sm"/>}
              unCheckedChildren={<SunFilled className="text-gray-50 text-sm"/>}
              className="text-center"
@@ -49,7 +48,6 @@ const Header = () => {
            <li className="p-5">
             <Switch 
             onClick={handleTheme}
-            defaultChecked
             unCheckedChildren={<SunFilled className="text-gray-50 text-sm"/>}
             checkedChildren={<MoonFilled className="text-gray-50 text-sm"/>}
             className="text-center"

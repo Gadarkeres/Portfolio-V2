@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${roboto.className} dark`}>
+      <body className={`${roboto.className}`}>
         <Header/>
         {children}
         </body>
