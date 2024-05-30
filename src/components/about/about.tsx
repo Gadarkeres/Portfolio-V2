@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Me2 from '../../assets/me/me2.jpeg';
 import './about.css'; 
+import ButtonCustom from '../ui/Button';
+import Link from 'next/link';
 
 function About() {
     return (
@@ -16,10 +18,12 @@ function About() {
                         className="rounded-full mx-auto shadow-lg"
                     />
                 </div>
-                <div>
+                <div className='flex flex-col justify-center items-center gap-2'>
                     <h1 className="text-4xl text-center font-bold dark:text-gray-200">Matheus Rafael</h1>
-                    <p className="text-center text-lg mt-2 dark:text-gray-200">Desenvolvedor Front-end</p>
-                    
+                    <p className="text-center text-lg mt-2 dark:text-gray-200">Desenvolvedor Front-end</p>  
+                  <Link href="/habilidades">
+                    <ButtonCustom text="Habilidades" />
+                    </Link>              
                 </div>
             </div>
             <div>

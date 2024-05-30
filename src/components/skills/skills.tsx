@@ -10,13 +10,19 @@ import next from "../../assets/technologies/next.png"
 import spring from "../../assets/technologies/spring-boot.png"
 import api from "../../assets/technologies/api.png"
 import sql from "../../assets/technologies/sql.png"
+import mongo from "../../assets/technologies/mongodb.png"
+import docker from "../../assets/technologies/docker.jpg"
+import node from '../../assets/technologies/node.png'
 const Skills = () => {
   return (
     <section className="flex flex-col w-full min-h-screen bg-gray-200 dark:bg-black">
-      <div className="mt-5">
+      <div className="mt-5 flex flex-col w-full items-center justify-center ">
         <h1 className="text-3xl text-center font-bold dark:text-gray-200">
           H A B I L I D A D E S
         </h1>
+        <small className="text-base text-center dark:text-gray-200">
+          Passe o mouse sobre cada imagem para ver o nome da tecnologia
+        </small>
       </div>
       <div className="w-full h-3/6 flex flex-col mt-10 justify-center items-center gap-20 lg:flex-row lg:p-20">
         <div className="w-5/6 bg-white overflow-hidden shadow-lg dark:bg-primaryBlack p-2 rounded-lg lg:w-3/6">
@@ -36,7 +42,10 @@ const Skills = () => {
           </h2>
           <Technology image={spring} alt={'SPRING BOOT'} porcent={50} backend color="green"/>
           <Technology image={api} alt={'API REST'} porcent={50} backend color="blue"/>
-          <Technology image={sql} alt={'SQL'} porcent={60} backend color="#74CED1"/>
+          <Technology image={sql} alt={'SQL'} porcent={55} backend color="#74CED1"/>
+          <Technology image={mongo} alt={'MongoDB'} porcent={0} backend color="green"/>
+          <Technology image={docker} alt={'Docker'} porcent={0} backend color="blue"/>
+          <Technology image={node} alt={'Node'} porcent={0} backend color="purple"/>
         </div>
       </div>
     </section>
