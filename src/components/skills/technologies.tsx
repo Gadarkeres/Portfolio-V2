@@ -8,15 +8,23 @@ import { title } from "process";
 
 type Props = {
   porcent: number;
-  backend?: boolean;
   image: any;
   alt: any;
   color: string;
   title: string;
   text: string;
+  backend?: boolean;
 };
 
-const Technology = ({ porcent, backend, image, alt, color, text, title }: Props) => {
+const Technology = ({
+  porcent,
+  image,
+  alt,
+  color,
+  text,
+  title,
+  backend,
+}: Props) => {
   const [open, setOpen] = useState(false);
   return (
     <div className="w-full dark:text-gray-200 mt-5 px-5 flex gap-3 py-2">
@@ -31,22 +39,15 @@ const Technology = ({ porcent, backend, image, alt, color, text, title }: Props)
           />
         </Tooltip>
       </div>
-      {backend ? (
-        <>
-          <Progress
-            percent={porcent}
-            status="active"
-            strokeColor={"red"}
-            showInfo={false}
-          />
-          <small className="dark:text-gray-200">{porcent}%</small>
-        </>
-      ) : (
-        <>
-          <Progress percent={porcent} status="active" showInfo={false} />
-          <small className="dark:text-gray-200">{porcent}%</small>
-        </>
-      )}
+      <>
+        <Progress
+          percent={porcent}
+          status="active"
+          showInfo={false}
+          strokeColor={backend ? "red" : ""}
+        />
+        <small className="dark:text-gray-200">{porcent}%</small>
+      </>
       <ModalCustom open={open} setOpen={setOpen} text={text} title={title} />
     </div>
   );
