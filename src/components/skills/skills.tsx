@@ -13,9 +13,9 @@ const Skills = () => {
       <div className="mt-5 flex flex-col w-full items-center justify-center ">
         <h1 className="text-3xl text-center font-bold dark:text-gray-200">
           H A B I L I D A D E S
-        </h1>
+        </h1> 
         <small className="text-base text-center dark:text-gray-200">
-          Passe o mouse sobre cada imagem para ver o nome da tecnologia
+         Clique sobre as imagens das tecnologias para ver mais detalhes
         </small>
       </div>
       <div className="w-full h-3/6 flex flex-col mt-10 justify-center items-center gap-20 lg:flex-row lg:p-20">
