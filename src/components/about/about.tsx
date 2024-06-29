@@ -33,7 +33,7 @@ const About = () => {
           </h3>
           <p className="text-base text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
             Tenho 23 anos e moro em Maringá. Meu interesse inicial foi em
-            programação, começando com C# em 2020, mas migrei para o
+            programação, começando com C# em 2021, mas migrei para o
             desenvolvimento front-end. Atualmente, estou focado em estudar
             back-end com Java Spring Boot e bancos de dados SQL. Acredito ter
             uma boa base nessas tecnologias, pois estou trabalhando com React e
