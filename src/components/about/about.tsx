@@ -77,7 +77,7 @@ const About = () => {
             open={open}
             setOpen={setOpen}
             title="Meu primeiro portfólio"
-            text="Esse é meu primeiro portfólio, desenvolvido antes mesmo de eu conseguir meu primeiro emprego, juntamente com projetos projetos feitos na época, foi aonde tudo começou."
+            text="Esse é meu primeiro portfólio, desenvolvido antes mesmo de eu conseguir meu primeiro emprego, juntamente com projetos feitos na época, foi aonde tudo começou."
             functionCustom={() =>
               redirect("https://gadarkeres.github.io/Portfolio/")
             }
