@@ -7,10 +7,26 @@ type Props = {
   setOpen: Dispatch<SetStateAction<boolean>>;
   text: String;
   title: String;
+  functionCustom?: any;
+  okText?: String;
 };
-const ModalCustom = ({ open, setOpen, text, title }: Props) => {
+const ModalCustom = ({
+  open,
+  setOpen,
+  text,
+  title,
+  functionCustom,
+  okText,
+}: Props) => {
   const closeModal = () => {
     setOpen(false);
+  };
+
+  const onOk = () => {
+    if (functionCustom) {
+      functionCustom();
+    }
+    closeModal();
   };
 
   return (
@@ -19,9 +35,10 @@ const ModalCustom = ({ open, setOpen, text, title }: Props) => {
         title={title}
         open={open}
         cancelText="Cancelar"
-        onOk={closeModal}
+        onOk={onOk}
         onCancel={closeModal}
         closeIcon={false}
+        okText={okText ? okText : "Ok"}
       >
         <p>{text}</p>
       </Modal>

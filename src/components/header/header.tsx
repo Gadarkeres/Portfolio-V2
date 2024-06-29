@@ -35,6 +35,7 @@ const Header = () => {
              checkedChildren={<MoonFilled className="text-gray-50 text-sm"/>}
              unCheckedChildren={<SunFilled className="text-gray-50 text-sm"/>}
              className="text-center"
+             defaultChecked={true}
             />
           </li>
         </ul>
@@ -51,6 +52,7 @@ const Header = () => {
             unCheckedChildren={<SunFilled className="text-gray-50 text-sm"/>}
             checkedChildren={<MoonFilled className="text-gray-50 text-sm"/>}
             className="text-center"
+            defaultChecked={true}
             />
           </li>
         </ul>

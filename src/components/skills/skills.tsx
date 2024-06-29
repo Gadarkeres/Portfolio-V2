@@ -9,7 +9,7 @@ const Skills = () => {
   const dataFront: TechnologyData[] = frontTech;
   const dataBack: TechnologyData[] = backTech;
   return (
-    <section className="flex flex-col w-full min-h-screen bg-gray-200 dark:bg-black">
+    <div className="flex flex-col w-full min-h-screen  bg-gradient-to-r from-gray-200 to-gray-400 dark:bg-gradient-to-r dark:from-black dark:to-gray-800">
       <div className="mt-5 flex flex-col w-full items-center justify-center ">
         <h1 className="text-3xl text-center font-bold dark:text-gray-200">
           H A B I L I D A D E S
@@ -55,14 +55,7 @@ const Skills = () => {
             ))}
         </div>
       </div>
-      {/* <div className="w-full flex items-center justify-center p-5 bg-red-400">
-        <div className="flex flex-col w-full">
-          <h1 className="text-2xl text-center font-bold dark:text-gray-200 mb-5">Primeiro Portfólio</h1>
-          <div></div>
-          <div></div>
-        </div>
-      </div> */}
-    </section>
+    </div>
   );
 };
 
