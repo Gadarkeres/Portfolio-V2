@@ -20,7 +20,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex flex-col w-full min-h-screen bg-gradient-to-r from-gray-200 to-gray-400 dark:bg-gradient-to-r dark:from-black dark:to-gray-800 lg:gap-0">
+    <div className="flex flex-col gap-10 w-full min-h-screen bg-gradient-to-r from-gray-200 to-gray-400 dark:bg-gradient-to-r dark:from-black dark:to-gray-800 lg:gap-0">
       <div className="mt-5 flex flex-col w-full items-center justify-center">
         <h1 className="text-3xl text-center font-bold dark:text-gray-200">
           SOBRE MIM
@@ -58,7 +58,7 @@ const About = () => {
           <h3 className="text-xl font-bold dark:text-gray-200 opacity-90 text-center">
             Meu Primeiro Portfólio
             <Tooltip title="Clique na imagem para saber mais">
-              <InfoCircleFilled className="ml-2"/>
+              <InfoCircleFilled className="ml-2" />
             </Tooltip>
           </h3>
 
@@ -71,8 +71,6 @@ const About = () => {
               alt="Imagem portfólio"
               className="mx-auto shadow-lg rounded-lg"
               layout="responsive"
-              width={500}
-              height={300}
             />
           </div>
           <ModalCustom
