@@ -54,7 +54,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full h-3/6 mb-5 flex flex-col justify-center items-center gap-20 lg:flex-row lg:p-15">
-        <div className="w-11/12 bg-white shadow-lg dark:bg-primaryBlack p-5 rounded-lg lg:w-4/6">
+        <div className="w-11/12 bg-white shadow-lg dark:bg-primaryBlack p-5 rounded-lg lg:w-3/5">
           <h3 className="text-xl font-bold dark:text-gray-200 opacity-90 text-center">
             Meu Primeiro Portfólio
             <Tooltip title="Clique na imagem para saber mais">
