@@ -21,8 +21,8 @@ function Apresentation() {
                 <div className='flex flex-col justify-center items-center gap-2'>
                     <h1 className="text-4xl text-center font-bold dark:text-gray-200">Matheus Rafael</h1>
                     <p className="text-center text-lg mt-2 dark:text-gray-200">Desenvolvedor Front-end</p>  
-                  <Link href="/habilidades">
-                    <ButtonCustom text="Habilidades" />
+                  <Link href="/sobre">
+                    <ButtonCustom text="Sobre mim" />
                     </Link>              
                 </div>
             </div>

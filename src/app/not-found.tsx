@@ -8,7 +8,7 @@ export default function NotFound() {
       <h1 className="text-lg md:text-3xl  text-gray-900 dark:text-gray-50">
         Ops... Pagina não encontrada!
       </h1>
-      <ButtonCustom >
+      <ButtonCustom>
         <Link href={"/"}>Ir para home</Link>
         <ReloadOutlined/>
       </ButtonCustom>

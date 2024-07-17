@@ -21,6 +21,7 @@ export default function ButtonCustom({
       className={`flex flex-row  text-center justify-center items-center px-2.5 py-2 gap-2 rounded-md hover:bg-opacity-80  text-gray-200 bg-primaryBlack  dark:bg-gray-200 dark:text-gray-950  ${custom ? custom : ''}` }
     >
       {text}
+      {children}
     </button>
   );
 }

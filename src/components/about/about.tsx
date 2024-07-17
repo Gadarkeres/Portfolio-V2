@@ -26,7 +26,7 @@ const About = () => {
           SOBRE MIM
         </h1>
       </div>
-      <div className="w-full h-3/6 flex flex-col justify-center items-center lg:flex-row lg:p-20">
+      <div className="w-full h-3/6 flex flex-col justify-center items-center lg:flex-row lg:p-6">
         <div className="w-5/6 bg-white shadow-lg dark:bg-primaryBlack p-5 rounded-lg lg:w-3/6">
           <h3 className="text-xl font-bold dark:text-gray-200 opacity-90 text-center">
             Quem sou eu
