@@ -1,26 +1,20 @@
 "use client";
-interface ButtonProps {
+
+import { ComponentProps } from "react";
+
+interface ButtonProps extends ComponentProps<"button"> {
   children?: React.ReactNode;
-  disabled?: boolean;
-  text?: string;
-  onClick?: () => void;
   custom?: string;
 }
 
-export default function ButtonCustom({
-  children,
-  disabled,
-  text,
-  onClick,
-  custom,
-}: ButtonProps) {
+export default function Button({ children, custom, ...props }: ButtonProps) {
   return (
     <button
-      onClick={() => onClick && onClick()}
-      disabled={disabled}
-      className={`flex flex-row  text-center justify-center items-center px-2.5 py-2 gap-2 rounded-md hover:bg-opacity-80  text-gray-200 bg-primaryBlack  dark:bg-gray-200 dark:text-gray-950  ${custom ? custom : ''}` }
+      {...props}
+      className={`flex flex-row  text-center justify-center items-center px-2.5 py-2 gap-2 rounded-md hover:bg-opacity-80  text-gray-200 bg-primaryBlack  dark:bg-gray-200 dark:text-gray-950  ${
+        custom ? custom : ""
+      }`}
     >
-      {text}
       {children}
     </button>
   );

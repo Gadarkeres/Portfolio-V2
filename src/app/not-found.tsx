@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ButtonCustom from "@/components/ui/Button";
-import {ReloadOutlined} from "@ant-design/icons"
+import Button from "@/components/ui/Button";
+import { ReloadOutlined } from "@ant-design/icons";
 
 export default function NotFound() {
   return (
@@ -8,10 +8,10 @@ export default function NotFound() {
       <h1 className="text-lg md:text-3xl  text-gray-900 dark:text-gray-50">
         Ops... Pagina não encontrada!
       </h1>
-      <ButtonCustom>
+      <Button>
         <Link href={"/"}>Ir para home</Link>
-        <ReloadOutlined/>
-      </ButtonCustom>
+        <ReloadOutlined />
+      </Button>
     </div>
   );
 }

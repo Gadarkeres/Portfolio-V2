@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Img from "../../assets/me/image-portfolio.png";
 import ModalCustom from "../ui/Modal";
-import ButtonCustom from "../ui/Button";
-import { InfoCircleFilled } from "@ant-design/icons";
+import { InfoCircleFilled, LinkOutlined } from "@ant-design/icons";
 import { Tooltip } from "antd";
+import Button from "../ui/Button";
+import Link from "next/link";
 
 const About = () => {
   const [open, setOpen] = useState(false);
@@ -40,17 +41,14 @@ const About = () => {
             TypeScript no front-end e Java Spring Boot no back-end, caminhando
             para me tornar um desenvolvedor full-stack.
           </p>
-          <div className=" w-full flex justify-center m-1">
-            <ButtonCustom
-              text="Linkedin"
-              custom={"w-2/6 m-2"}
-              onClick={() =>
-                redirect(
-                  "https://www.linkedin.com/in/matheus-rafael-b0aa18259/"
-                )
-              }
-            />
-          </div>
+            <Link
+              className="flex justify-center items-center mt-5 "
+              href={"https://www.linkedin.com/in/matheus-rafael-7b9b0b1b5/"}
+            >
+              <Button custom="w-1/3">Linkedin 
+              <LinkOutlined size={24}/>
+              </Button>
+            </Link>
         </div>
       </div>
       <div className="w-full h-3/6 mb-5 flex flex-col justify-center items-center gap-20 lg:flex-row lg:p-15">
