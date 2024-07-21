@@ -42,7 +42,7 @@ const Login = () => {
             register={{
               ...register("email", { required: "Email é obrigatório" }),
             }}
-            label_name="Email"
+            label_name="Usuário"
             type="text"
             placeholder="admin"
             id="email"
@@ -54,7 +54,7 @@ const Login = () => {
             register={{
               ...register("password", { required: "Senha é obrigatória" }),
             }}
-            label_name="Password"
+            label_name="Senha"
             type={showPassword ? "text" : "password"}
             placeholder="1234"
             id="password"
