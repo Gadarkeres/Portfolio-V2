@@ -8,7 +8,7 @@ export default function useLoginHook() {
   const [showPassword, setShowPassword] = useState(false);
 
   function submit(data: formLogin) {
-    if (data.email == "admin" && data.password == "admin"){
+    if (data.email == "admin" && data.password == "1234"){
       setOpen(true)
     }
     else

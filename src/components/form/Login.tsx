@@ -33,7 +33,7 @@ const Login = () => {
           Login
         </h2>
         <div className="text-gray-950 dark:text-white">
-          <Tooltip title="Login: admin / admin">
+          <Tooltip title="Login: admin / 1234">
             <InfoCircleFilled className="absolute top-3 right-3" size={22} />
           </Tooltip>
         </div>
