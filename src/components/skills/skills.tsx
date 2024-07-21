@@ -10,8 +10,8 @@ const Skills = () => {
   const dataBack: TechnologyData[] = backTech;
   return (
     <div className="flex flex-col w-full min-h-screen  bg-gradient-to-r from-gray-200 to-gray-400 dark:bg-gradient-to-r dark:from-black dark:to-gray-800">
-      <div className="mt-5 flex flex-col w-full items-center justify-center ">
-        <h1 className="text-3xl text-center font-bold dark:text-gray-200">
+      <div className="mt-5 flex flex-col w-full items-center justify-center">
+        <h1 className="text-3xl text-center font-bold dark:text-gray-200 ">
           H A B I L I D A D E S
         </h1> 
         <small className="text-base text-center dark:text-gray-200">

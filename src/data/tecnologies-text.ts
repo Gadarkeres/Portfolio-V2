@@ -51,7 +51,7 @@ export const frontTech: TechnologyData[] = [
     text: "TypeScript é uma versão aprimorada do JavaScript, adicionando a segurança dos tipos. Isso ajuda a evitar erros e torna o código mais fácil de manter.",
     img: Ts,
     alt: "TypeScript",
-    porcent: 70,
+    porcent: 80,
     color: "blue",
   },
   {
@@ -59,7 +59,7 @@ export const frontTech: TechnologyData[] = [
     text: "React é uma biblioteca baseado em javascript que facilita a criação de interfaces de usuário modernas e reativas. Ele torna a construção de componentes reutilizáveis simples e eficiente.",
     img: react,
     alt: "React",
-    porcent: 80,
+    porcent: 70,
     color: "blue",
   },
   {
@@ -67,7 +67,7 @@ export const frontTech: TechnologyData[] = [
     text: "Next.js é um framework que leva o React a outro nível, oferecendo funcionalidades como renderização no servidor e geração de sites estáticos com facilidade.",
     img: next,
     alt: "Next.js",
-    porcent: 70,
+    porcent: 60,
     color: "black",
   },
 ];
