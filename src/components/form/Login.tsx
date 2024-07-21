@@ -34,7 +34,7 @@ const Login = () => {
         </h2>
         <div className="text-gray-950 dark:text-white">
           <Tooltip title="Login: admin / admin">
-            <InfoCircleFilled className="absolute top-3 right-3" size={20} />
+            <InfoCircleFilled className="absolute top-3 right-3" size={22} />
           </Tooltip>
         </div>
         <Form onSubmit={handleSubmit(submit)}>

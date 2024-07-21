@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header/header';
+import { Analytics } from "@vercel/analytics/react"
 
 const roboto = Roboto({ weight:'500', subsets: ['latin'] });
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${roboto.className} dark`}>
         <Header/>
         {children}
+        <Analytics />
         </body>
     </html>
   )
