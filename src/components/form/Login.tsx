@@ -28,7 +28,7 @@ const Login = () => {
 
   return (
     <div className=" flex flex-col items-center justify-center p-5 w-full min-h-screen bg-gradient-to-r from-gray-200 to-gray-400 dark:bg-gradient-to-r dark:from-black dark:to-gray-800">
-      <div className="relative w-4/5 h-3/4 bg-slate-200 dark:bg-primaryBlack flex flex-col items-center p-10 gap-4 rounded-lg shadow-md md:max-w-lg">
+      <div className="relative w-5/6 h-3/4 bg-slate-200 dark:bg-primaryBlack flex flex-col items-center p-10 gap-4 rounded-lg shadow-md md:max-w-lg">
         <h2 className="text-2xl font-bold text-gray-950 dark:text-gray-200">
           Login
         </h2>
