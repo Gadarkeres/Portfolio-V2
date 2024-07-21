@@ -9,6 +9,7 @@ type Props = {
   title: String;
   functionCustom?: any;
   okText?: String;
+  cancelText?: String;
 };
 const ModalCustom = ({
   open,
@@ -17,6 +18,7 @@ const ModalCustom = ({
   title,
   functionCustom,
   okText,
+  cancelText,
 }: Props) => {
   const closeModal = () => {
     setOpen(false);
@@ -34,7 +36,7 @@ const ModalCustom = ({
       <Modal
         title={title}
         open={open}
-        cancelText="Cancelar"
+        cancelText={cancelText ? cancelText : "Cancelar"}
         onOk={onOk}
         onCancel={closeModal}
         closeIcon={false}
