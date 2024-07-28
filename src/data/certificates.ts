@@ -4,7 +4,7 @@ import course03 from "../assets/certificates/api-rest-spring.png";
 import course04 from "../assets/certificates/projeter-api-rest.png";
 import course05 from "../assets/certificates/hibernate.png";
 import course06 from "../assets/certificates/react-desafios.png";
-import course07 from "../assets/certificates/Stream-java.png";
+import course07 from "../assets/certificates/stream-java.png";
 
 export interface CertificateData {
   img: any;
