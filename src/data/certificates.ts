@@ -38,6 +38,6 @@ export const certificates: CertificateData[] = [
   },
   {
     img: course07,
-    alt: "Stream API Java",
+    alt: "Curso Stream API Java ",
   }
 ];
