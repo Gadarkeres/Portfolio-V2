@@ -30,7 +30,7 @@ const About = () => {
             desenvolvimento front-end. Atualmente, estou focado em estudar
             back-end com Java Spring Boot e bancos de dados SQL. Acredito ter
             uma boa base nessas tecnologias, pois estou trabalhando com React e
-            TypeScript no front-end e Java Spring Boot no back-end, caminhando
+            TypeScript no front-end e Java Spring Boot no back-end também utilizando metodologias ágeis com frameworks como scrum, caminhando
             para me tornar um desenvolvedor full-stack.
           </p>
           <Link
