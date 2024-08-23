@@ -11,32 +11,15 @@ type Props = {
   image: any;
   alt: any;
   color: string;
-  title: string;
-  text: string;
   backend?: boolean;
 };
 
-const Technology = ({
-  porcent,
-  image,
-  alt,
-  color,
-  text,
-  title,
-  backend,
-}: Props) => {
-  const [open, setOpen] = useState(false);
+const Technology = ({ porcent, image, alt, color, backend }: Props) => {
   return (
     <div className="w-full dark:text-gray-200 mt-5 px-5 flex gap-3 py-2">
       <div>
         <Tooltip title={alt} className="cursor-pointer" color={color}>
-          <Image
-            onClick={() => setOpen(true)}
-            src={image?.src}
-            alt={alt}
-            width={35}
-            height={45}
-          />
+          <Image src={image?.src} alt={alt} width={35} height={45} />
         </Tooltip>
       </div>
       <>
@@ -48,7 +31,6 @@ const Technology = ({
         />
         <small className="dark:text-gray-200">{porcent}%</small>
       </>
-      <ModalCustom open={open} setOpen={setOpen} text={text} title={title} />
     </div>
   );
 };

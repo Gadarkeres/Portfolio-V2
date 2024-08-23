@@ -43,7 +43,7 @@ export const frontTech: TechnologyData[] = [
     text: "JavaScript é a mágica por trás das páginas web interativas. Ele permite adicionar dinamismo, como animaçes, validaçes de formulários e muito mais.",
     img: javascript,
     alt: "JavaScript",
-    porcent: 80,
+    porcent: 100,
     color: "gold",
   },
   {
@@ -78,7 +78,7 @@ export const backTech: TechnologyData[] =[
     text: "Spring Boot simplifica o desenvolvimento de aplicaçes Java. Com ele, você pode criar aplicativos robustos e escaláveis rapidamente, usando como back-end.",
     img: spring,
     alt: "Spring Boot",
-    porcent: 50,
+    porcent: 60,
     color: "green",
   },
   {
@@ -102,7 +102,7 @@ export const backTech: TechnologyData[] =[
     text: "Node.js permite usar JavaScript no servidor, possibilitando a construção de aplicaçes de rede rápidas e escaláveis. Ele é ideal para criar APIs e serviços web.",
     img: node,
     alt: "Node.js",
-    porcent: 0,
+    porcent: 20,
     color: "purple",
   },
   {

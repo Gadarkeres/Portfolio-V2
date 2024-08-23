@@ -23,7 +23,7 @@ function Apresentation() {
             Matheus Rafael
           </h1>
           <p className="text-center text-lg mt-2 dark:text-gray-200">
-            Desenvolvedor Front-end
+            Desenvolvedor Full-Stack
           </p>
           <Link href="/sobre">
             <Button>Sobre mim</Button>
