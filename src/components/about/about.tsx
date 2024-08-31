@@ -33,7 +33,7 @@ const About = () => {
             className="flex justify-center items-center mt-5 "
             href={"https://www.linkedin.com/in/matheus-rafael-7b9b0b1b5/"}
           >
-            <Button custom="w-1/3">
+            <Button custom="w-1/2 lg:w-1/3">
               Linkedin
               <LinkOutlined size={24} />
             </Button>
