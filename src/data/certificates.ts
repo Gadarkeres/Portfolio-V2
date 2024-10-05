@@ -6,6 +6,7 @@ import course05 from "../assets/certificates/hibernate.png";
 import course06 from "../assets/certificates/react-desafios.png";
 import course07 from "../assets/certificates/Stream-java.png";
 import course08 from "../assets/certificates/persistencia-de-dados-jpa.png";
+import course09 from "../assets/certificates/sql-course.png";
 
 export interface CertificateData {
   img: any;
@@ -45,4 +46,8 @@ export const certificates: CertificateData[] = [
     img: course08,
     alt: "Persistência de dados JPA",
   },
+  {
+    img: course09,
+    alt:"curso de sql"
+  }
 ];
