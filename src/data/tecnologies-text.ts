@@ -51,7 +51,7 @@ export const frontTech: TechnologyData[] = [
     text: "TypeScript é uma versão aprimorada do JavaScript, adicionando a segurança dos tipos. Isso ajuda a evitar erros e torna o código mais fácil de manter.",
     img: Ts,
     alt: "TypeScript",
-    porcent: 80,
+    porcent: 100,
     color: "blue",
   },
   {
@@ -59,7 +59,7 @@ export const frontTech: TechnologyData[] = [
     text: "React é uma biblioteca baseado em javascript que facilita a criação de interfaces de usuário modernas e reativas. Ele torna a construção de componentes reutilizáveis simples e eficiente.",
     img: react,
     alt: "React",
-    porcent: 70,
+    porcent: 80,
     color: "blue",
   },
   {
@@ -78,7 +78,7 @@ export const backTech: TechnologyData[] =[
     text: "Spring Boot simplifica o desenvolvimento de aplicaçes Java. Com ele, você pode criar aplicativos robustos e escaláveis rapidamente, usando como back-end.",
     img: spring,
     alt: "Spring Boot",
-    porcent: 60,
+    porcent: 70,
     color: "green",
   },
   {
@@ -86,7 +86,7 @@ export const backTech: TechnologyData[] =[
     text: "SQL é uma linguagem de programação orientada a tabelas racionais, com ele pode ler,editar,criar e deletar tabelas ou colunas, e muito mais!",
     img: sql,
     alt: "SQL",
-    porcent: 55,
+    porcent: 70,
     color: "#74CED1",
   },
   {
@@ -110,7 +110,7 @@ export const backTech: TechnologyData[] =[
     text: "APIs REST são a espinha dorsal da comunicação entre sistemas modernos. Elas permitem que diferentes aplicaçes troquem dados de forma simples e eficiente via HTTP.",
     img: api,
     alt: "API REST",
-    porcent: 50,
+    porcent: 65,
     color: "blue",
   },
   {
@@ -118,7 +118,7 @@ export const backTech: TechnologyData[] =[
     text: "Docker revoluciona o desenvolvimento ao permitir que você empacote aplicaçes e suas dependências em contêineres. Isso garante que funcionem em qualquer ambiente de forma consistente.",
     img: docker,
     alt: "Docker",
-    porcent: 0,
+    porcent: 35,
     color: "blue",
   },
 ]
