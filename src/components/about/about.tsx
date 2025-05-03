@@ -4,7 +4,6 @@ import { Tooltip } from "antd";
 import Link from "next/link";
 import Button from "../ui/Button";
 import Carroussel from "./carroussel";
-import { projects } from "@/data/projects";
 
 const About = () => {
   return (
@@ -20,7 +19,7 @@ const About = () => {
             Quem sou eu
           </h3>
           <p className="text-base text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
-            Tenho 23 anos, sou um desenvolvedor Full-Stack com experiência
+            Tenho 24 anos, sou um desenvolvedor Full-Stack com experiência
             em React e TypeScript no front-end e em Java e Spring Boot no back-end. Estou
             sempre buscando aprender novas tecnologias e melhorar minhas
             habilidades, portanto, estou sempre aberto a novos desafios e
