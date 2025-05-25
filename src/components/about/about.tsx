@@ -19,21 +19,23 @@ const About = () => {
             Quem sou eu
           </h3>
           <p className="text-base text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
-            Tenho 24 anos, sou um desenvolvedor Full-Stack com experiência
-            em React e TypeScript no front-end e em Java e Spring Boot no back-end. Estou
-            sempre buscando aprender novas tecnologias e melhorar minhas
+            Tenho 24 anos, sou um desenvolvedor Full-Stack com experiência em
+            React e TypeScript no front-end e em Java e Spring Boot no back-end.
+            Estou sempre buscando aprender novas tecnologias e melhorar minhas
             habilidades, portanto, estou sempre aberto a novos desafios e
             oportunidades.
           </p>
           <Link
             className="flex justify-center items-center mt-5 "
-            href={"https://www.linkedin.com/in/matheus-rafael-b0aa18259/"}
+            href={"https://www.linkedin.com/in/matheus-rafael-b0aa18259/details/projects/"}
             target="_blank"
           >
-            <Button custom="w-1/2 lg:w-1/3">
-              Linkedin
-              <LinkOutlined size={24} />
-            </Button>
+            <Tooltip title="Acesse meu linkedin para ver todos os projetos">
+              <Button custom="w-1/2 lg:w-1/3">
+                Linkedin
+                <LinkOutlined size={24} />
+              </Button>
+            </Tooltip>
           </Link>
         </div>
       </div>
