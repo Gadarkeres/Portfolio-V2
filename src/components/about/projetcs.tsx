@@ -29,7 +29,7 @@ export default function ProjectsGrid() {
             >
               <Card.Meta
                 title={project.title}
-                description={project.text.slice(0, 100) + "..."}
+                description={project.text.slice(0, 150) + "..."}
               />
               <div style={{ marginTop: 16, display: "flex", gap: 8 }}>
                 <Button
@@ -42,7 +42,7 @@ export default function ProjectsGrid() {
                 </Button>
                 {project.url && (
                   <Button
-                    href={project.url}
+                    href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

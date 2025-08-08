@@ -1,6 +1,6 @@
 "use client";
 import { LinkOutlined } from "@ant-design/icons";
-import { Tooltip, Tag } from "antd";
+import { Tag } from "antd";
 import Link from "next/link";
 import Button from "../ui/Button";
 import ProjectsGrid from "./projetcs";
@@ -96,11 +96,9 @@ const About = () => {
                 href="https://www.linkedin.com/in/matheus-rafael-b0aa18259/details/projects/"
                 target="_blank"
               >
-                <Tooltip title="Acesse meu LinkedIn para ver os projetos">
                   <Button custom="w-full md:w-auto">
                     LinkedIn <LinkOutlined />
                   </Button>
-                </Tooltip>
               </Link>
             </div>
 
