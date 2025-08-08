@@ -19,6 +19,7 @@ export interface TechnologyData {
   alt: string;
   porcent: number;
   color: string;
+  note: string;
 }
 
 export const frontTech: TechnologyData[] = [
@@ -28,7 +29,8 @@ export const frontTech: TechnologyData[] = [
     img: html,
     alt: "HTML",
     porcent: 100,
-    color:"ED5500",
+    color: "ED5500",
+    note: "Tecnologia totalmente dominada e uso diário constante e semântico.",
   },
   {
     title: "CSS",
@@ -37,6 +39,7 @@ export const frontTech: TechnologyData[] = [
     alt: "CSS",
     porcent: 100,
     color: "blue",
+    note: "Boa base em estilos, layout responsivo e animações.",
   },
   {
     title: "JavaScript",
@@ -45,6 +48,7 @@ export const frontTech: TechnologyData[] = [
     alt: "JavaScript",
     porcent: 100,
     color: "gold",
+    note: "Domínio sólido da linguagem; utilizado bibliotecas e frameworks.",
   },
   {
     title: "TypeScript",
@@ -53,6 +57,7 @@ export const frontTech: TechnologyData[] = [
     alt: "TypeScript",
     porcent: 100,
     color: "blue",
+    note: "Uso constante com React e Next, aproveitando os benefícios dos tipos.",
   },
   {
     title: "React",
@@ -61,6 +66,7 @@ export const frontTech: TechnologyData[] = [
     alt: "React",
     porcent: 80,
     color: "blue",
+    note: "Forte experiência em projetos reais com componentes, hooks e contextos.",
   },
   {
     title: "Next.js",
@@ -69,17 +75,19 @@ export const frontTech: TechnologyData[] = [
     alt: "Next.js",
     porcent: 60,
     color: "black",
+    note: "Conhecimento intermediário; uso em projetos pessoais e estudo de SSR.",
   },
 ];
 
-export const backTech: TechnologyData[] =[
+export const backTech: TechnologyData[] = [
   {
     title: "Spring Boot",
     text: "Spring Boot simplifica o desenvolvimento de aplicaçes Java. Com ele, você pode criar aplicativos robustos e escaláveis rapidamente, usando como back-end.",
     img: spring,
     alt: "Spring Boot",
-    porcent: 70,
+    porcent: 100,
     color: "green",
+    note: "Boa base em APIs REST com autenticação e integração com banco de dados e utilzação profissional.",
   },
   {
     title: "SQL",
@@ -88,6 +96,7 @@ export const backTech: TechnologyData[] =[
     alt: "SQL",
     porcent: 70,
     color: "#74CED1",
+    note: "Experiência sólida com SQLServer, especialmente em consultas e modelagem.",
   },
   {
     title: "MongoDB",
@@ -96,6 +105,7 @@ export const backTech: TechnologyData[] =[
     alt: "MongoDB",
     porcent: 0,
     color: "green",
+    note: "Ainda não utilizado em projetos, mas presente no roadmap de estudos.",
   },
   {
     title: "Node.js",
@@ -104,21 +114,24 @@ export const backTech: TechnologyData[] =[
     alt: "Node.js",
     porcent: 20,
     color: "purple",
+    note: "Início dos estudos; usado em projetos simples e aplicações pequenas.",
   },
   {
     title: "API REST",
     text: "APIs REST são a espinha dorsal da comunicação entre sistemas modernos. Elas permitem que diferentes aplicaçes troquem dados de forma simples e eficiente via HTTP.",
     img: api,
     alt: "API REST",
-    porcent: 65,
+    porcent: 100,
     color: "blue",
+    note: "Experiência prática com autenticação JWT, CRUD e integração front-back.",
   },
   {
     title: "Docker",
     text: "Docker revoluciona o desenvolvimento ao permitir que você empacote aplicaçes e suas dependências em contêineres. Isso garante que funcionem em qualquer ambiente de forma consistente.",
     img: docker,
     alt: "Docker",
-    porcent: 35,
+    porcent: 50,
     color: "blue",
+    note: "Conhecimento básico, utilizado para testes e deploys de projetos pessoais.",
   },
-]
+];
