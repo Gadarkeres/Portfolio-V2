@@ -14,7 +14,7 @@ import {MoonFilled, SunFilled} from "@ant-design/icons"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const handleTheme = useTheme();
+const { handleTheme } = useTheme();
   return (
     <header className="w-screen h-15 bg-white overflow-hidden  dark:bg-primaryBlack  md:max-h-auto">
       <nav className="container mx-auto flex justify-around items-center py-4 md: ">

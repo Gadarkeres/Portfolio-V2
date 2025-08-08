@@ -20,5 +20,5 @@ export function useTheme() {
       setTheme('dark')
     }
   }
-  return handleTheme;
+  return {handleTheme, theme};
 }

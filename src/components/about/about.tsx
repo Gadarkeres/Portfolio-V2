@@ -3,7 +3,7 @@ import { InfoCircleFilled, LinkOutlined } from "@ant-design/icons";
 import { Tooltip } from "antd";
 import Link from "next/link";
 import Button from "../ui/Button";
-import Carroussel from "./carroussel";
+import ProjectsGrid from "./projetcs";
 
 const About = () => {
   return (
@@ -48,7 +48,7 @@ const About = () => {
             </Tooltip>
           </h3>
 
-          <Carroussel />
+          <ProjectsGrid />
         </div>
       </div>
     </div>

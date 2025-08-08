@@ -1,3 +1,6 @@
+import imgPortfolio from "../assets/projects/image-portfolio.png";
+import imgCripto from "../assets/projects/cripto-api.png";
+
 export interface projectsData {
   title: string;
   text: string;
@@ -9,15 +12,15 @@ export interface projectsData {
 export const projects: projectsData[] = [
   {
     title: "Portfolio V1",
-    text: "Primeiro projeto, antes mesmo de conseguir meu primeiro emprego no mercado de trabalho, juntamente com projetos feitos na evolução, foi aonde tudo comecou.",
-    img: require("../assets/projects/image-portfolio.png"),
+    text: "Primeiro projeto...",
+    img: imgPortfolio,
     alt: "Meu primeiro portfólio",
     url: "https://gadarkeres.github.io/Portfolio/",
   },
   {
     title: "Cripto API paginada",
-    text: "Projeto que consome uma api de criptomoedas e monta uma tabela paginada e aceita filtros, desenvolvido com NextJS, utilizando renderização server-side, typescript e tailwind.",
-    img: require("../assets/projects/cripto-api.png"),
+    text: "Projeto que consome uma API...",
+    img: imgCripto,
     alt: "Projeto criptomoedas",
     url: "https://cripto-api-five.vercel.app/",
   },
