@@ -27,7 +27,7 @@ export default function Skills() {
         </motion.h1>
 
         <motion.small
-          className="text-base dark:text-gray-300"
+          className="text-base dark:text-gray-300 pt-2"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
