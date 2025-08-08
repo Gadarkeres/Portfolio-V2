@@ -63,7 +63,7 @@ const About = () => {
                 variants={textFadeIn}
               >
                 <li>
-                  Desenvolvimento de interfaces eficientes e APIs escaláveis.
+                 Manutenção e evolução de sistemas.
                 </li>
                 <li>
                   Foco em qualidade, manutenibilidade e experiência do
