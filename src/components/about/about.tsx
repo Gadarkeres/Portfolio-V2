@@ -126,7 +126,7 @@ const About = () => {
       <div className="w-full mb-10 flex flex-col items-center lg:px-6">
         <div className="w-11/12 max-w-6xl rounded-xl bg-white dark:bg-primaryBlack shadow-lg p-5">
           <motion.h3
-            className="text-xl font-bold dark:text-gray-200 text-center"
+            className="text-2xl font-bold dark:text-gray-200 text-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -134,15 +134,6 @@ const About = () => {
           >
             Projetos
           </motion.h3>
-          <motion.p
-            className="text-sm text-center mt-1 mb-4 text-gray-600 dark:text-gray-400"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={textFadeIn}
-          >
-            Cards com link direto para a demo e para o código.
-          </motion.p>
 
           <ProjectsGrid />
         </div>
