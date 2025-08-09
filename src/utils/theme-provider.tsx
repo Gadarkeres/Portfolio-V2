@@ -3,7 +3,7 @@
 import { ConfigProvider, theme as antdTheme } from "antd";
 import { useTheme } from "@/utils/theme";
 
-export default function ThemeProvider({ children }: { children: React.ReactNode }) {
+export default function ThemeProvider({ children }: { readonly children: React.ReactNode }) {
   const { theme } = useTheme();
 
   return (
