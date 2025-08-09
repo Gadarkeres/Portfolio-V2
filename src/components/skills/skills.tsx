@@ -33,7 +33,7 @@ export default function Skills() {
           viewport={{ once: true }}
           variants={textFadeIn}
         >
-          Clique nas tecnologias para ver o nome (tooltip) — níveis por Tag
+          Clique nas tecnologias para ver o nome (tooltip)
         </motion.small>
       </div>
 

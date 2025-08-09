@@ -5,11 +5,10 @@ import NavbarItem from "./navbar-item";
 import Link from "next/link";
 import { MenuOutlined } from "@ant-design/icons";
 import { useState } from "react";
-import clsx from "clsx";
 import { Switch } from "antd"
 import { useTheme } from "@/utils/theme";
 import {MoonFilled, SunFilled} from "@ant-design/icons"
-
+import { AnimatePresence, motion } from "framer-motion";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,21 +40,49 @@ const { handleTheme } = useTheme();
         </ul>
       </nav>
       {/* Mobile Menu */}
-       <ul className={clsx(isMenuOpen ?"flex flex-col text-center mt-5 md:hidden" : "hidden", "text-center"
-       )}>
-          {navbarItems.map((item, index) => (
-            <NavbarItem key={index} title={item.title} path={item.path} toggleMenu={toggleMenu} />
-          ))}
-           <li className="p-5">
-            <Switch 
+  <AnimatePresence initial={false}>
+  {isMenuOpen && (
+    <motion.div
+      key="mobile-menu"
+      className="md:hidden overflow-hidden origin-top" 
+      initial="closed"
+      animate="open"
+      exit="closed"
+      variants={{
+        closed: {
+          height: 0,
+          opacity: 0,
+          transition: { duration: 0.22, ease: [0.4, 0.0, 0.2, 1] },
+        },
+        open: {
+          height: "auto",
+          opacity: 1,
+          transition: { duration: 0.28, ease: [0.22, 1, 0.36, 1] }
+        }
+      }}
+    >
+      <ul className="flex flex-col text-center mt-5">
+        {navbarItems.map((item, index) => (
+          <NavbarItem
+            key={item.path}
+            title={item.title}
+            path={item.path}
+            toggleMenu={toggleMenu}
+          />
+        ))}
+        <li className="p-5">
+          <Switch
             onClick={handleTheme}
-            unCheckedChildren={<SunFilled className="text-gray-50 text-sm"/>}
-            checkedChildren={<MoonFilled className="text-gray-50 text-sm"/>}
+            unCheckedChildren={<SunFilled className="text-gray-50 text-sm" />}
+            checkedChildren={<MoonFilled className="text-gray-50 text-sm" />}
             className="text-center"
             defaultChecked={true}
-            />
-          </li>
-        </ul>
+          />
+        </li>
+      </ul>
+    </motion.div>
+  )}
+</AnimatePresence>
     </header>
   );
 };
