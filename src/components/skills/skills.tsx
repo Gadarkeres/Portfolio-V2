@@ -59,7 +59,6 @@ export default function Skills() {
                         key={t.title}
                         image={t.img}
                         alt={t.alt}
-                        porcent={t.porcent}
                         note={t.note}
                       />
                     ))}
@@ -80,7 +79,6 @@ export default function Skills() {
                         key={t.title}
                         image={t.img}
                         alt={t.alt}
-                        porcent={t.porcent}
                         note={t.note}
                       />
                     ))}

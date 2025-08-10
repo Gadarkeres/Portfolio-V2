@@ -1,23 +1,15 @@
 "use client";
+import { Tooltip } from "antd";
 import Image from "next/image";
-import { Tag, Tooltip } from "antd";
 
 type Props = {
-  image: any;
-  alt: string;
-  porcent: number;   
-  note?: string;     
-  colorItem?: string;
+  readonly image: any;
+  readonly alt: string;
+  readonly note?: string;     
+  readonly colorItem?: string;
 };
 
-const levelFromPercent = (p: number) => {
-  if (p >= 80) return { label: "Avançado", color: "green" as const };
-  if (p >= 50) return { label: "Intermediário", color: "gold" as const };
-  return { label: "Básico", color: "default" as const };
-};
-
-export default function TechnologyItem({ image, alt, porcent, note, colorItem }: Props) {
-  const level = levelFromPercent(porcent);
+export default function TechnologyItem({ image, alt, note, colorItem }: Props) {
 
   return (
     <div className="flex items-center gap-3 p-2 rounded-md hover:bg-black/5 dark:hover:bg-white/5 transition">
@@ -34,10 +26,6 @@ export default function TechnologyItem({ image, alt, porcent, note, colorItem }:
             {note}
           </span>
         )}
-      </div>
-
-      <div className="ml-auto">
-        <Tag color={level.color}>{level.label}</Tag>
       </div>
     </div>
   );
