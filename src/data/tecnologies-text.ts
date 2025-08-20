@@ -78,7 +78,7 @@ export const frontTech: TechnologyData[] = [
     img: tailwind,
     alt: "Tailwind",
     color: "blue",
-    note: "Boa base em estilos, layout responsivo e animações.",
+    note: "Tailwind CSS é uma biblioteca de estilos CSS que permite criar estilos a partir de classes, utilizo bastante nos meus projetos pessoais.",
   },
   {
     title: "Zod + React Hook Form",
