@@ -10,6 +10,8 @@ import sql from "../assets/technologies/sql.png"
 import mongo from "../assets/technologies/mongodb.png"
 import docker from "../assets/technologies/docker.jpg"
 import node from "../assets/technologies/node.png"
+import tailwind from "../assets/technologies/tailwind.png"
+import zod from "../assets/technologies/zod.png"
 import { StaticImageData } from "next/image"
 
 export interface TechnologyData {
@@ -70,14 +72,30 @@ export const frontTech: TechnologyData[] = [
     color: "black",
     note: "Conhecimento intermediário uso em projetos pessoais e estudo de SSR.",
   },
+  {
+    title: "Tailwind",
+    text: "Tailwind CSS é uma biblioteca de estilos CSS que permite criar estilos a partir de classes, utilizo bastante nos meus projetos pessoais.",
+    img: tailwind,
+    alt: "Tailwind",
+    color: "blue",
+    note: "Boa base em estilos, layout responsivo e animações.",
+  },
+  {
+    title: "Zod + React Hook Form",
+    text: "Zod e React Hook Form ajudam a validar e gerenciar formulários, tornando-os mais seguros e eficientes. Também utilizo bastante na construção de formulários.",
+    img: zod,
+    alt: "Zod + React Hook Form",
+    color: "blue",
+    note: "Uso constante com React e Next, aproveitando os benefícios dos tipos.",
+  }
 ]
 
 export const backTech: TechnologyData[] = [
   {
-    title: "Spring Boot",
+    title: "Spring Boot & Hibernate",
     text: "Spring Boot simplifica o desenvolvimento de aplicaçes Java. Com ele, você pode criar aplicativos robustos e escaláveis rapidamente, usando como back-end.",
     img: spring,
-    alt: "Spring Boot",
+    alt: "Spring Boot & Hibernate",
     color: "green",
     note: "Boa base em APIs REST com autenticação e integração com banco de dados e utilzação profissional.",
   },
