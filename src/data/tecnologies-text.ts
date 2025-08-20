@@ -86,7 +86,7 @@ export const frontTech: TechnologyData[] = [
     img: zod,
     alt: "Zod + React Hook Form",
     color: "blue",
-    note: "Uso constante com React e Next, aproveitando os benefícios dos tipos.",
+    note: "Utilizo deforma padrão e constante em projetos pessoais, Zod e React Hook Form ajudam a validar e gerenciar formulários, tornando-os mais seguros e eficientes.",
   }
 ]
 
