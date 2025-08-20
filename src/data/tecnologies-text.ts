@@ -86,7 +86,7 @@ export const frontTech: TechnologyData[] = [
     img: zod,
     alt: "Zod + React Hook Form",
     color: "blue",
-    note: "Utilizo deforma padrão e constante em projetos pessoais, Zod e React Hook Form ajudam a validar e gerenciar formulários, tornando-os mais seguros e eficientes.",
+    note: "Utilizo de forma padrão e constante em projetos pessoais, Zod e React Hook Form ajudam a validar e gerenciar formulários, tornando-os mais seguros e eficientes.",
   }
 ]
 
