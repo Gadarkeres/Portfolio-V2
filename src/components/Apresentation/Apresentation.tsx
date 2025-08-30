@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Me2 from "../../assets/me/me2.jpeg";
+import apresentationImg from "../../assets/me/foto-corporativa.png";
 import "./about.css";
 import Button from "../ui/Button";
 import Link from "next/link";
@@ -17,10 +17,10 @@ function Apresentation() {
             transition={{ duration: 0.8 }}
           >
             <Image
-              src={Me2}
+              src={apresentationImg}
               alt="Matheus Rafael"
-              width={286}
-              height={286}
+              width={300}
+              height={300}
               className="rounded-full mx-auto shadow-lg"
             />
           </motion.div>
