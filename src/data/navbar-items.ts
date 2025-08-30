@@ -9,6 +9,6 @@ export const navbarItems: NavbarItems[] = [
     { title: 'Home', path: '/' },
     { title: 'Sobre', path: '/sobre' },
     { title: 'Habilidades', path: '/habilidades' },
-    { title: 'Certificados', path: '/certificados' },
-    { title: 'Login', path: '/login' },
+    { title: 'Certificados', path: '/certificados' }
+ //   { title: 'Login', path: '/login' },
 ];

@@ -49,10 +49,10 @@ const About = () => {
               >
                 💻 Sou um <b>desenvolvedor Full-Stack</b> com experiência
                 prática no desenvolvimento de aplicações web modernas, atuando
-                no <b>front-end</b> com <b>React</b> e <b>TypeScript</b> e no{" "}
-                <b>back-end</b> com <b>Java</b> e <b>Spring Boot</b>. Possuo
-                conhecimento sólido em <b>SQL Server</b>, versionamento com{" "}
-                <b>Git</b> e pipelines de <b>CI/CD</b> com <b>Azure DevOps</b>.
+                no <b>Front-end</b> com React e TypeScript e no{" "}
+                <b>Back-end</b> com Java Spring Boot. Possuo
+                conhecimento sólido em SQL, versionamento com{" "}
+                Git e pipelines de CI/CD com Azure DevOps.
               </motion.p>
 
               <motion.ul
