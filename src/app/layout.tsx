@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/header";
 import { Analytics } from "@vercel/analytics/react";
 import ThemeProvider from "@/utils/theme-provider";
+import "@/app/i18n/index";
 
 const roboto = Roboto({ weight: "500", subsets: ["latin"] });
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />;

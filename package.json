@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "interface": "i18next-resources-for-ts interface -i src\\i18n\\locales\\pt -o src\\i18n\\types\\interface.ts"
-
+    "interface": "i18next-resources-for-ts interface -i src\\app\\i18n\\locales\\pt -o src\\app\\i18n\\types\\interface.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^1.3.1",
