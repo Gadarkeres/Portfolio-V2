@@ -1,3 +1,11 @@
 {
-  "toogleTheme": "Mudar Tema"
+  "toogleTheme": "Mudar Tema",
+  "en": "Inglês",
+  "pt": "Português",
+    "navbar": {
+    "home": "Home",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "certificates": "Certificados"
+  }
 }

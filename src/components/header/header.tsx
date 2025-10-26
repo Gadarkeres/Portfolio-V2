@@ -1,4 +1,3 @@
-'use client'
 import { navbarItems } from "@/data/navbar-items";
 import NavbarItem from "./navbar-item";
 import Link from "next/link";
@@ -18,7 +17,6 @@ const Header = () => {
   const handleLanguageChange = (value: string) => {
     i18n.changeLanguage(value);
   };
-
   return (
     <header className="w-screen h-15 bg-white overflow-hidden dark:bg-primaryBlack md:max-h-auto">
       <nav className="container mx-auto flex justify-around items-center py-4">
@@ -35,11 +33,16 @@ const Header = () => {
 
         <ul className="hidden md:flex gap-8 flex-row text-center items-center">
           {navbarItems.map((item, index) => (
-            <NavbarItem key={index} title={item.title} path={item.path} toggleMenu={toggleMenu} />
+            <NavbarItem
+              key={index}
+              titleKey={t(`navbar.${item.titleKey}` as any)}
+              path={item.path}
+              toggleMenu={toggleMenu}
+            />
           ))}
-
           <li>
             <Select
+              title={i18n.language === 'pt' ? t('pt') : t('en')}
               defaultValue={i18n.language || 'pt'}
               style={{ width: 80 }}
               onChange={handleLanguageChange}
@@ -87,11 +90,17 @@ const Header = () => {
             }}
           >
             <ul className="flex flex-col text-center mt-5">
-              {navbarItems.map((item) => (
-                <NavbarItem key={item.path} title={item.title} path={item.path} toggleMenu={toggleMenu} />
+              {navbarItems.map((item, index) => (
+                <NavbarItem
+                  key={index}
+                  titleKey={t(`navbar.${item.titleKey}` as any)}
+                  path={item.path}
+                  toggleMenu={toggleMenu}
+                />
               ))}
               <li className="p-5 flex justify-center gap-3">
                 <Select
+                  title={i18n.language === 'pt' ? t('pt') : t('en')}
                   defaultValue={i18n.language || 'pt'}
                   style={{ width: 80 }}
                   onChange={handleLanguageChange}
