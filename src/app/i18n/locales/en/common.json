@@ -51,5 +51,88 @@
         "text": "My first personal portfolio, built early in my career and later evolved with new technologies and design."
       }
     }
+  },
+  "skills": {
+    "title": "SKILLS",
+    "subtitle": "Click on the technologies to see the name (tooltip)",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "technologies": {
+      "html": {
+        "title": "HTML",
+        "text": "HTML is the foundation of every web page. It allows you to create the structure of a website, defining elements such as headings, paragraphs, links, and images.",
+        "note": "Fully mastered technology used daily with semantic consistency."
+      },
+      "css": {
+        "title": "CSS",
+        "text": "CSS brings life and style to web pages. With it, you can define colors, fonts, layouts, and much more, making sites visually appealing.",
+        "note": "Strong foundation in styling, responsive layout, and animations."
+      },
+      "javascript": {
+        "title": "JavaScript",
+        "text": "JavaScript is the magic behind interactive web pages. It allows adding dynamics such as animations, form validations, and much more.",
+        "note": "Solid command of the language using libraries and frameworks."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "text": "TypeScript is an enhanced version of JavaScript that adds type safety. It helps prevent errors and makes the code easier to maintain.",
+        "note": "Used constantly with React and Next, taking advantage of type safety benefits."
+      },
+      "react": {
+        "title": "React",
+        "text": "React is a JavaScript library that simplifies building modern and reactive user interfaces. It makes creating reusable components simple and efficient.",
+        "note": "Strong experience in real projects with components, hooks, and contexts."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "text": "Next.js is a framework that takes React to the next level, offering features like server-side rendering and static site generation easily.",
+        "note": "Intermediate knowledge; used in personal projects and SSR study."
+      },
+      "tailwind": {
+        "title": "Tailwind",
+        "text": "Tailwind CSS is a utility-first CSS library that allows styling directly with classes. I use it extensively in my personal projects.",
+        "note": "Tailwind CSS is a utility-first CSS library that allows styling directly with classes. I use it extensively in my personal projects."
+      },
+      "zod": {
+        "title": "Zod + React Hook Form",
+        "text": "Zod and React Hook Form help validate and manage forms, making them safer and more efficient. I also use them frequently when building forms.",
+        "note": "Used regularly in personal projects; Zod and React Hook Form help validate and manage forms efficiently."
+      },
+      "spring": {
+        "title": "Spring Boot & Hibernate",
+        "text": "Spring Boot simplifies Java application development. With it, you can quickly create robust and scalable apps, using it as a back-end solution.",
+        "note": "Good foundation in REST APIs with authentication and database integration; used professionally."
+      },
+      "sql": {
+        "title": "SQL",
+        "text": "SQL is a programming language for relational tables. It allows reading, editing, creating, and deleting tables or columns, and much more!",
+        "note": "Solid experience with SQL Server, especially in queries and modeling."
+      },
+      "mongo": {
+        "title": "MongoDB",
+        "text": "MongoDB is a NoSQL database that facilitates storing and querying large volumes of data using a flexible, document-oriented structure.",
+        "note": "Not yet used in projects but included in the study roadmap."
+      },
+      "node": {
+        "title": "Node.js",
+        "text": "Node.js allows using JavaScript on the server, enabling the creation of fast and scalable network applications. It is ideal for building APIs and web services.",
+        "note": "Beginner level; used in simple projects and small applications."
+      },
+      "api": {
+        "title": "API REST",
+        "text": "REST APIs are the backbone of communication between modern systems. They allow different applications to exchange data simply and efficiently via HTTP.",
+        "note": "Hands-on experience with JWT authentication, CRUD, and front-back integration."
+      },
+      "docker": {
+        "title": "Docker",
+        "text": "Docker revolutionizes development by allowing you to package applications and their dependencies into containers, ensuring they run consistently in any environment.",
+        "note": "Basic knowledge; used for testing and deploying personal projects."
+      }
+    }
+  },
+  "certificates": {
+    "title": "CERTIFICATES",
+    "showAll": "Show All",
+    "showLess": "Show Less"
   }
 }

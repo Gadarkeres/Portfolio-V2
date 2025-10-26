@@ -3,6 +3,7 @@ import { Tabs, Card } from "antd";
 import TechnologyItem from "./TechnologyItem";
 import { frontTech, backTech, type TechnologyData } from "@/data/tecnologies-text";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const textFadeIn = {
   hidden: { opacity: 0, y: 10 },
@@ -10,6 +11,7 @@ const textFadeIn = {
 };
 
 export default function Skills() {
+  const { t } = useTranslation("common");
   const dataFront: TechnologyData[] = frontTech;
   const dataBack: TechnologyData[] = backTech;
 
@@ -23,7 +25,7 @@ export default function Skills() {
           viewport={{ once: true }}
           variants={textFadeIn}
         >
-          HABILIDADES
+          {t("skills.title")}
         </motion.h1>
 
         <motion.small
@@ -33,7 +35,7 @@ export default function Skills() {
           viewport={{ once: true }}
           variants={textFadeIn}
         >
-          Clique nas tecnologias para ver o nome (tooltip)
+          {t("skills.subtitle")}
         </motion.small>
       </div>
 
@@ -49,17 +51,19 @@ export default function Skills() {
           items={[
             {
               key: "front",
-              label: "Front-end",
+              label: t("skills.frontend"),
               children: (
-               <Card className="bg-white dark:bg-primaryBlack lg:min-h-[320px]">
+                <Card className="bg-white dark:bg-primaryBlack lg:min-h-[320px]">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
-                    {dataFront.map((t) => (
+                    {dataFront.map((tech) => (
                       <TechnologyItem
-                       colorItem={t.color}
-                        key={t.title}
-                        image={t.img}
-                        alt={t.alt}
-                        note={t.note}
+                        key={tech.key}
+                        image={tech.img}
+                        alt={tech.alt}
+                        colorItem={tech.color}
+                        titleKey={`skills.technologies.${tech.key}.title`}
+                        textKey={`skills.technologies.${tech.key}.text`}
+                        noteKey={`skills.technologies.${tech.key}.note`}
                       />
                     ))}
                   </div>
@@ -68,18 +72,19 @@ export default function Skills() {
             },
             {
               key: "back",
-              label: "Back-end",
+              label: t("skills.backend"),
               children: (
-                
-               <Card className="bg-white dark:bg-primaryBlack lg:min-h-[320px]">
+                <Card className="bg-white dark:bg-primaryBlack lg:min-h-[320px]">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
-                    {dataBack.map((t) => (
+                    {dataBack.map((tech) => (
                       <TechnologyItem
-                        colorItem={t.color}
-                        key={t.title}
-                        image={t.img}
-                        alt={t.alt}
-                        note={t.note}
+                        key={tech.key}
+                        image={tech.img}
+                        alt={tech.alt}
+                        colorItem={tech.color}
+                        titleKey={`skills.technologies.${tech.key}.title`}
+                        textKey={`skills.technologies.${tech.key}.text`}
+                        noteKey={`skills.technologies.${tech.key}.note`}
                       />
                     ))}
                   </div>

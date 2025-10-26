@@ -51,5 +51,88 @@
         "text": "Meu primeiro portfólio pessoal, criado no início da carreira e aprimorado ao longo da jornada como desenvolvedor, juntamente com projetos feitos na época."
       }
     }
+  },
+  "skills": {
+    "title": "HABILIDADES",
+    "subtitle": "Clique nas tecnologias para ver o nome (tooltip)",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "technologies": {
+      "html": {
+        "title": "HTML",
+        "text": "HTML é a base de toda página web. Ele permite criar a estrutura de um site, definindo elementos como títulos, parágrafos, links e imagens.",
+        "note": "Tecnologia totalmente dominada e uso diário constante e semântico."
+      },
+      "css": {
+        "title": "CSS",
+        "text": "CSS é o que dá vida e estilo às páginas web. Com ele, você pode definir cores, fontes, layouts e muito mais, tornando os sites visualmente atraentes.",
+        "note": "Boa base em estilos, layout responsivo e animações."
+      },
+      "javascript": {
+        "title": "JavaScript",
+        "text": "JavaScript é a mágica por trás das páginas web interativas. Ele permite adicionar dinamismo, como animações, validações de formulários e muito mais.",
+        "note": "Domínio sólido da linguagem utilizando bibliotecas e frameworks."
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "text": "TypeScript é uma versão aprimorada do JavaScript, adicionando a segurança dos tipos. Isso ajuda a evitar erros e torna o código mais fácil de manter.",
+        "note": "Uso constante com React e Next, aproveitando os benefícios dos tipos."
+      },
+      "react": {
+        "title": "React",
+        "text": "React é uma biblioteca baseada em JavaScript que facilita a criação de interfaces de usuário modernas e reativas. Ele torna a construção de componentes reutilizáveis simples e eficiente.",
+        "note": "Forte experiência em projetos reais com componentes, hooks e contextos."
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "text": "Next.js é um framework que leva o React a outro nível, oferecendo funcionalidades como renderização no servidor e geração de sites estáticos com facilidade.",
+        "note": "Conhecimento intermediário, uso em projetos pessoais e estudo de SSR."
+      },
+      "tailwind": {
+        "title": "Tailwind",
+        "text": "Tailwind CSS é uma biblioteca de estilos CSS que permite criar estilos a partir de classes, utilizo bastante nos meus projetos pessoais.",
+        "note": "Tailwind CSS é uma biblioteca de estilos CSS que permite criar estilos a partir de classes, utilizo bastante nos meus projetos pessoais."
+      },
+      "zod": {
+        "title": "Zod + React Hook Form",
+        "text": "Zod e React Hook Form ajudam a validar e gerenciar formulários, tornando-os mais seguros e eficientes. Também utilizo bastante na construção de formulários.",
+        "note": "Utilizo de forma padrão e constante em projetos pessoais, Zod e React Hook Form ajudam a validar e gerenciar formulários, tornando-os mais seguros e eficientes."
+      },
+      "spring": {
+        "title": "Spring Boot & Hibernate",
+        "text": "Spring Boot simplifica o desenvolvimento de aplicações Java. Com ele, você pode criar aplicativos robustos e escaláveis rapidamente, usando como back-end.",
+        "note": "Boa base em APIs REST com autenticação e integração com banco de dados e utilização profissional."
+      },
+      "sql": {
+        "title": "SQL",
+        "text": "SQL é uma linguagem de programação orientada a tabelas relacionais, com ele pode ler, editar, criar e deletar tabelas ou colunas, e muito mais!",
+        "note": "Experiência sólida com SQL Server, especialmente em consultas e modelagem."
+      },
+      "mongo": {
+        "title": "MongoDB",
+        "text": "MongoDB é um banco de dados NoSQL que facilita o armazenamento e a consulta de grandes volumes de dados, utilizando uma estrutura flexível e orientada a documentos.",
+        "note": "Ainda não utilizado em projetos, mas presente no roadmap de estudos."
+      },
+      "node": {
+        "title": "Node.js",
+        "text": "Node.js permite usar JavaScript no servidor, possibilitando a construção de aplicações de rede rápidas e escaláveis. Ele é ideal para criar APIs e serviços web.",
+        "note": "Início dos estudos, usado em projetos simples e aplicações pequenas."
+      },
+      "api": {
+        "title": "API REST",
+        "text": "APIs REST são a espinha dorsal da comunicação entre sistemas modernos. Elas permitem que diferentes aplicações troquem dados de forma simples e eficiente via HTTP.",
+        "note": "Experiência prática com autenticação JWT, CRUD e integração front-back."
+      },
+      "docker": {
+        "title": "Docker",
+        "text": "Docker revoluciona o desenvolvimento ao permitir que você empacote aplicações e suas dependências em contêineres. Isso garante que funcionem em qualquer ambiente de forma consistente.",
+        "note": "Conhecimento básico, utilizado para testes e deploys de projetos pessoais."
+      }
+    }
+  },
+  "certificates": {
+    "title": "CERTIFICADOS",
+    "showAll": "Ver Tudo",
+    "showLess": "Ver Menos"
   }
 }
