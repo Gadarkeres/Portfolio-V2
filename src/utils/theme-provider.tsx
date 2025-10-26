@@ -1,7 +1,7 @@
 "use client";
 
 import { ConfigProvider, theme as antdTheme } from "antd";
-import { useTheme } from "@/utils/theme";
+import { useTheme } from "./theme-context";
 
 export default function ThemeProvider({ children }: { readonly children: React.ReactNode }) {
   const { theme } = useTheme();

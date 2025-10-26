@@ -5,15 +5,15 @@ import Link from "next/link";
 import { MenuOutlined, GlobalOutlined, MoonFilled, SunFilled } from "@ant-design/icons";
 import { useState } from "react";
 import { Switch, Select } from "antd";
-import { useTheme } from "@/utils/theme";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@/utils/theme-context";
 
 const Header = () => {
   const { t, i18n } = useTranslation("common");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const { handleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   const handleLanguageChange = (value: string) => {
     i18n.changeLanguage(value);
@@ -54,7 +54,7 @@ const Header = () => {
           <li>
             <Switch
               title={t('toogleTheme')}
-              onClick={handleTheme}
+              onClick={toggleTheme}
               checkedChildren={<MoonFilled className="text-gray-50 text-sm" />}
               unCheckedChildren={<SunFilled className="text-gray-50 text-sm" />}
               className="text-center"
@@ -103,7 +103,7 @@ const Header = () => {
                 />
                 <Switch
                   title={t('toogleTheme')}
-                  onClick={handleTheme}
+                  onClick={toggleTheme}
                   unCheckedChildren={<SunFilled className="text-gray-50 text-sm" />}
                   checkedChildren={<MoonFilled className="text-gray-50 text-sm" />}
                   className="text-center"

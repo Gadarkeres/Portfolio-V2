@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/header/header";
-import { Analytics } from "@vercel/analytics/react";
-import ThemeProvider from "@/utils/theme-provider";
-import "@/app/i18n/index";
+import { Roboto } from 'next/font/google'
+import './globals.css'
+import Header from '@/components/header/header'
+import { Analytics } from '@vercel/analytics/react'
+import { ThemeProvider } from '@/utils/theme-context'
+import AntdThemeProvider from '@/utils/antd-theme-provider'
+import '@/app/i18n/index'
+import { Metadata } from 'next'
 
 const roboto = Roboto({ weight: "500", subsets: ["latin"] });
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />;
@@ -20,12 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br">
-      <body className={`${roboto.className} dark`}>
+   <html lang="pt-br">
+      <body className={roboto.className}>
         <ThemeProvider>
-          <Header />
-          {children}
-          <Analytics />
+          <AntdThemeProvider>
+            <Header />
+            {children}
+            <Analytics />
+          </AntdThemeProvider>
         </ThemeProvider>
       </body>
     </html>
