@@ -1,10 +1,10 @@
 import imgPortfolio from "../assets/projects/portfolio.png";
 import imgCripto from "../assets/projects/cripto-api.png";
-import imgFontrak from "../assets/projects/fintrak.png";
+import imgFintrak from "../assets/projects/fintrak.png";
 
 export interface projectsData {
-  title: string;
-  text: string;
+  titleKey: string;
+  textKey: string;
   img: any;
   alt: string;
   url: string;
@@ -14,27 +14,27 @@ export interface projectsData {
 
 export const projects: projectsData[] = [
   {
-    title: "Fintrak",
-    text: "Projeto para gerenciamento de financas pessoais, com cadastro de despesas, gráficos, usuario e login, desenvolvido com React e Typescript com Nest JS.",
+    titleKey: "about.projects.fintrak.title",
+    textKey: "about.projects.fintrak.text",
     url: "https://fintrak-web-dev.vercel.app/dashboard",
     githubUrl: "https://github.com/Gadarkeres/fintrak-web",
     alt: "Projeto Fintrak",
-    img: imgFontrak,
+    img: imgFintrak,
     inProgress: true,
   },
   {
-    title: "Cripto API paginada",
-    text: "Projeto que consome uma api de criptomoedas e monta uma tabela paginada e aceita filtros, desenvolvido com NextJS, utilizando renderização server-side, typescript e tailwind",
+    titleKey: "about.projects.cripto.title",
+    textKey: "about.projects.cripto.text",
     img: imgCripto,
-    alt: "Projeto criptomoedas",
+    alt: "Projeto Cripto API",
     url: "https://cripto-api-five.vercel.app/",
     githubUrl: "https://github.com/Gadarkeres/Cripto-API",
   },
   {
-    title: "Portfolio V1",
-    text: "Primeiro projeto, antes mesmo de conseguir meu primeiro emprego no mercado de trabalho, juntamente com projetos feitos na evolução.",
+    titleKey: "about.projects.portfolio.title",
+    textKey: "about.projects.portfolio.text",
     img: imgPortfolio,
-    alt: "Meu primeiro portfólio",
+    alt: "Portfolio V1",
     url: "https://gadarkeres.github.io/Portfolio/",
     githubUrl: "https://github.com/Gadarkeres/Portfolio-V2",
   },

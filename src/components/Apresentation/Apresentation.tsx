@@ -5,8 +5,10 @@ import "./about.css";
 import Button from "../ui/Button";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Apresentation() {
+  const {t} = useTranslation('common')
   return (
     <section className="flex justify-center items-center w-full min-h-screen bg-gray-200 dark:bg-black">
       <div className="w-full h-3/4 bg-slate-200 dark:bg-black flex flex-col md:flex-row md:justify-around md:items-center gap-20">
@@ -35,10 +37,10 @@ function Apresentation() {
             Matheus Rafael
           </motion.h1>
           <p className="text-center text-lg mt-2 dark:text-gray-200">
-            Desenvolvedor Full-Stack
+            {t('home.dev')}
           </p>
           <Link href="/sobre">
-            <Button>Sobre mim</Button>
+            <Button>{t('home.about')}</Button>
           </Link>
         </div>
       </div>

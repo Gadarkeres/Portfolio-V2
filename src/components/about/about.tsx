@@ -5,6 +5,7 @@ import Link from "next/link";
 import Button from "../ui/Button";
 import ProjectsGrid from "./projetcs";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const textFadeIn = {
   hidden: { opacity: 0, y: 10 },
@@ -12,6 +13,8 @@ const textFadeIn = {
 };
 
 const About = () => {
+  const { t } = useTranslation("common");
+
   return (
     <div className="flex flex-col gap-10 w-full min-h-screen bg-gradient-to-r from-gray-200 to-gray-400 dark:bg-gradient-to-r dark:from-black dark:to-gray-800 lg:gap-5">
       <div className="mt-5 flex flex-col w-full items-center justify-center">
@@ -22,7 +25,7 @@ const About = () => {
           viewport={{ once: true }}
           variants={textFadeIn}
         >
-          SOBRE MIM
+          {t("about.title")}
         </motion.h1>
       </div>
 
@@ -37,7 +40,7 @@ const About = () => {
                 viewport={{ once: true }}
                 variants={textFadeIn}
               >
-                Quem sou eu
+                {t("about.whoAmI")}
               </motion.h3>
 
               <motion.p
@@ -47,12 +50,7 @@ const About = () => {
                 viewport={{ once: true }}
                 variants={textFadeIn}
               >
-                💻 Sou um <b>desenvolvedor Full-Stack</b> com experiência
-                prática no desenvolvimento de aplicações web modernas, atuando
-                no <b>Front-end</b> com React e TypeScript e no{" "}
-                <b>Back-end</b> com Java Spring Boot. Possuo
-                conhecimento sólido em SQL, versionamento com{" "}
-                Git e pipelines de CI/CD com Azure DevOps.
+                {t("about.intro")}
               </motion.p>
 
               <motion.ul
@@ -62,33 +60,19 @@ const About = () => {
                 viewport={{ once: true }}
                 variants={textFadeIn}
               >
-                <li>
-                 Manutenção e evolução de sistemas.
-                </li>
-                <li>
-                  Foco em qualidade, manutenibilidade e experiência do
-                  desenvolvedor (DX).
-                </li>
-                <li>
-                  Colaboração e comunicação clara em times multidisciplinares.
-                </li>
+                <li>{t("about.list.item1")}</li>
+                <li>{t("about.list.item2")}</li>
+                <li>{t("about.list.item3")}</li>
               </motion.ul>
 
               <div className="mt-4 flex flex-wrap gap-2">
-                {[
-                  "React",
-                  "TypeScript",
-                  "Zustand",
-                  "React Hook Form",
-                  "Zod",
-                  "Java",
-                  "Spring Boot",
-                  "SQL Server",
-                ].map((t) => (
-                  <Tag key={t} color="geekblue" className="m-0">
-                    {t}
-                  </Tag>
-                ))}
+                {t("about.technologies", { returnObjects: true }).map(
+                  (tech: string) => (
+                    <Tag key={tech} color="geekblue" className="m-0">
+                      {tech}
+                    </Tag>
+                  )
+                )}
               </div>
 
               <Link
@@ -96,9 +80,9 @@ const About = () => {
                 href="https://www.linkedin.com/in/matheus-rafael-b0aa18259/details/projects/"
                 target="_blank"
               >
-                  <Button custom="w-full md:w-auto">
-                    LinkedIn <LinkOutlined />
-                  </Button>
+                <Button custom="w-full md:w-auto">
+                  {t("about.linkedinButton")} <LinkOutlined />
+                </Button>
               </Link>
             </div>
 
@@ -111,11 +95,7 @@ const About = () => {
                 variants={textFadeIn}
               >
                 <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed">
-                  Graduado em <b>Análise e Desenvolvimento de Sistemas</b>, sou
-                  apaixonado por tecnologia e estou sempre em busca de evolução
-                  contínua. Atuo com metodologias ágeis (<b>Scrum</b>,{" "}
-                  <b>Kanban</b>) e valorizo boas práticas de desenvolvimento
-                  como <b>Clean Code</b> e <b>SOLID</b>.
+                  {t("about.education")}
                 </p>
               </motion.div>
             </div>
@@ -132,7 +112,7 @@ const About = () => {
             viewport={{ once: true }}
             variants={textFadeIn}
           >
-            Projetos
+            {t("about.projectsTitle")}
           </motion.h3>
 
           <ProjectsGrid />

@@ -2,11 +2,54 @@
   "toogleTheme": "Change Theme",
   "en": "English",
   "pt": "Portuguese",
-    "navbar": {
+  "navbar": {
     "home": "Home",
     "about": "About",
     "skills": "Skills",
     "certificates": "Certificates"
+  },
+  "home": {
+    "dev": "Full-Stack Developer",
+    "about": "About me"
+  },
+  "about": {
+    "title": "ABOUT ME",
+    "whoAmI": "Who I am",
+    "intro": "💻 I'm a Full-Stack Developer with hands-on experience in building modern web applications, working on the Front-end with React and TypeScript and on the Back-end with Java Spring Boot. I have solid knowledge in SQL, version control with Git, and CI/CD pipelines using Azure DevOps.",
+    "list": {
+      "item1": "Maintenance and evolution of systems.",
+      "item2": "Focus on quality, maintainability, and developer experience (DX).",
+      "item3": "Collaboration and clear communication in multidisciplinary teams."
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Zustand",
+      "React Hook Form",
+      "Zod",
+      "Java",
+      "Spring Boot",
+      "SQL Server"
+    ],
+    "linkedinButton": "LinkedIn",
+    "education": "Graduated in Systems Analysis and Development, I'm passionate about technology and always seeking continuous growth. I work with agile methodologies (Scrum, Kanban) and value good development practices such as Clean Code and SOLID.",
+    "projectsTitle": "Projects",
+    "projects": {
+      "inProgress": "In Progress",
+      "viewProject": "View Project",
+      "sourceCode": "Source Code",
+      "fintrak": {
+        "title": "Fintrak",
+        "text": "Personal finance management app with expense tracking, charts, users, and login. Built with React, TypeScript, and NestJS."
+      },
+      "cripto": {
+        "title": "Crypto API",
+        "text": "App that consumes a cryptocurrency API and displays a paginated, filterable table using Next.js, TypeScript, and Tailwind CSS."
+      },
+      "portfolio": {
+        "title": "Portfolio V1",
+        "text": "My first personal portfolio, built early in my career and later evolved with new technologies and design."
+      }
+    }
   }
-
 }

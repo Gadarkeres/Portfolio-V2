@@ -1,11 +1,55 @@
 {
-  "toogleTheme": "Mudar Tema",
-  "en": "Inglês",
-  "pt": "Português",
-    "navbar": {
-    "home": "Home",
+  "toogleTheme": "Alterar Tema",
+  "en": "Inglês",
+  "pt": "Português",
+  "navbar": {
+    "home": "Início",
     "about": "Sobre",
     "skills": "Habilidades",
     "certificates": "Certificados"
+  },
+  "home": {
+    "dev": "Desenvolvedor Full-Stack",
+    "about": "Sobre mim"
+  },
+  "about": {
+    "title": "SOBRE MIM",
+    "whoAmI": "Quem sou eu",
+    "intro": "💻 Sou um Desenvolvedor Full-Stack com experiência prática no desenvolvimento de aplicações web modernas, atuando no Front-end com React e TypeScript e no Back-end com Java Spring Boot. Possuo conhecimento sólido em SQL, versionamento com Git e pipelines de CI/CD com Azure DevOps.",
+    "list": {
+      "item1": "Manutenção e evolução de sistemas.",
+      "item2": "Foco em qualidade, manutenibilidade e experiência do desenvolvedor (DX).",
+      "item3": "Colaboração e comunicação clara em times multidisciplinares."
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Zustand",
+      "React Hook Form",
+      "Zod",
+      "Java",
+      "Spring Boot",
+      "SQL Server"
+    ],
+    "linkedinButton": "LinkedIn",
+    "education": "Graduado em Análise e Desenvolvimento de Sistemas, sou apaixonado por tecnologia e estou sempre em busca de evolução contínua. Atuo com metodologias ágeis (Scrum, Kanban) e valorizo boas práticas de desenvolvimento como Clean Code e SOLID.",
+    "projectsTitle": "Projetos",
+    "projects": {
+      "inProgress": "Em Progresso",
+      "viewProject": "Ver Projeto",
+      "sourceCode": "Código Fonte",
+      "fintrak": {
+        "title": "Fintrak",
+        "text": "Projeto para gerenciamento de finanças pessoais, com cadastro de despesas, gráficos, usuários e login. Desenvolvido com React, TypeScript e NestJS."
+      },
+      "cripto": {
+        "title": "Cripto API paginada",
+        "text": "Projeto que consome uma API de criptomoedas, exibe tabela paginada com filtros, utilizando Next.js, TypeScript e Tailwind CSS."
+      },
+      "portfolio": {
+        "title": "Portfólio V1",
+        "text": "Meu primeiro portfólio pessoal, criado no início da carreira e aprimorado ao longo da jornada como desenvolvedor, juntamente com projetos feitos na época."
+      }
+    }
   }
 }
