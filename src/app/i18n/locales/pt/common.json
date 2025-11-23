@@ -32,6 +32,7 @@
       "SQL Server"
     ],
     "linkedinButton": "LinkedIn",
+    "downloadResumeButton": "Baixar Currículo",
     "education": "Graduado em Análise e Desenvolvimento de Sistemas, sou apaixonado por tecnologia e estou sempre em busca de evolução contínua. Atuo com metodologias ágeis (Scrum, Kanban) e valorizo boas práticas de desenvolvimento como Clean Code e SOLID.",
     "projectsTitle": "Projetos",
     "projects": {

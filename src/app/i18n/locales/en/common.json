@@ -32,6 +32,7 @@
       "SQL Server"
     ],
     "linkedinButton": "LinkedIn",
+    "downloadResumeButton": "Download Resume",
     "education": "Graduated in Systems Analysis and Development, I'm passionate about technology and always seeking continuous growth. I work with agile methodologies (Scrum, Kanban) and value good development practices such as Clean Code and SOLID.",
     "projectsTitle": "Projects",
     "projects": {

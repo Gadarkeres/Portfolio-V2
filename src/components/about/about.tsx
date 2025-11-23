@@ -1,5 +1,5 @@
 "use client";
-import { LinkOutlined } from "@ant-design/icons";
+import { LinkOutlined, DownloadOutlined } from "@ant-design/icons";
 import { Tag } from "antd";
 import Link from "next/link";
 import Button from "../ui/Button";
@@ -14,6 +14,15 @@ const textFadeIn = {
 
 const About = () => {
   const { t } = useTranslation("common");
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/resume/resume-matheus.pdf";
+    link.download = "resume-matheus.pdf";
+    link.setAttribute('target', '_blank');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="flex flex-col gap-10 w-full min-h-screen bg-gradient-to-r from-gray-200 to-gray-400 dark:bg-gradient-to-r dark:from-black dark:to-gray-800 lg:gap-5">
@@ -71,19 +80,25 @@ const About = () => {
                     <Tag key={tech} color="geekblue" className="m-0">
                       {tech}
                     </Tag>
-                  )
+                  ),
                 )}
               </div>
+              <div className="flex gap-4 mt-4">
+                <Link
+                  className="flex-1"
+                  href="https://www.linkedin.com/in/matheus-rafael-b0aa18259/details/projects/"
+                  target="_blank"
+                >
+                  <Button custom="w-full">
+                    {t("about.linkedinButton")} <LinkOutlined />
+                  </Button>
+                </Link>
 
-              <Link
-                className="inline-flex mt-6"
-                href="https://www.linkedin.com/in/matheus-rafael-b0aa18259/details/projects/"
-                target="_blank"
-              >
-                <Button custom="w-full md:w-auto">
-                  {t("about.linkedinButton")} <LinkOutlined />
+                <Button custom="flex-1" onClick={handleDownloadResume}>
+                  {t("about.downloadResumeButton")} <DownloadOutlined />
                 </Button>
-              </Link>
+              </div>
+
             </div>
 
             <div className="md:col-span-4">

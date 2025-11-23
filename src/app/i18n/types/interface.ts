@@ -1,6 +1,7 @@
 interface Resources {
   "common": {
     "about": {
+      "downloadResumeButton": "Baixar Currículo",
       "education": "Graduado em Análise e Desenvolvimento de Sistemas, sou apaixonado por tecnologia e estou sempre em busca de evolução contínua. Atuo com metodologias ágeis (Scrum, Kanban) e valorizo boas práticas de desenvolvimento como Clean Code e SOLID.",
       "intro": "💻 Sou um Desenvolvedor Full-Stack com experiência prática no desenvolvimento de aplicações web modernas, atuando no Front-end com React e TypeScript e no Back-end com Java Spring Boot. Possuo conhecimento sólido em SQL, versionamento com Git e pipelines de CI/CD com Azure DevOps.",
       "linkedinButton": "LinkedIn",
