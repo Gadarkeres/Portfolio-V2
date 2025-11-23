@@ -83,7 +83,7 @@ const About = () => {
                   ),
                 )}
               </div>
-              <div className="flex gap-4 mt-4">
+              <div className="flex flex-col gap-4 mt-4 sm:flex-row">
                 <Link
                   className="flex-1"
                   href="https://www.linkedin.com/in/matheus-rafael-b0aa18259/details/projects/"
